@@ -153,22 +153,15 @@ body::after{
   
   /* Contenido del modal */
   .card-digital {
-    border: 1px solid #ccc;
-    background-color: #2C3E50;
+    position: relative;
+    max-width: 100%; /* Máximo ancho permitido */
+    border: 1px solid #a06e22;
+    background-color: #fccb81;
     color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative; /* Agregado */
-}
-
-.card-digital .bg-img {
-    position: absolute;
-    inset: 0;
-    background-image: url('placeholder.svg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5; /* Reducido */
-    border-radius: 8px; /* Agregado */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    display: flex; /* Utilizando Flexbox */
+    flex-direction: column; /* Columnas apiladas */
 }
 
 .card-digital .content-top {
@@ -181,10 +174,6 @@ body::after{
     align-items: center;
 }
 
-.card-digital .university-logo {
-    border-radius: 50%;
-}
-
 .card-digital .content-bottom {
     padding: 20px;
 }
@@ -192,6 +181,11 @@ body::after{
 .card-digital .student-info {
     display: flex;
     align-items: center;
+    background-image: url('img\fondo-crede.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Reducido */
+    border-radius: 8px; /* Agregado */
 }
 
 .card-digital .student-photo {
@@ -200,24 +194,13 @@ body::after{
 }
 
 .card-digital .student-details {
-    color: #fff; /* Cambiado */
+    color: #000000; /* Cambiado */
 }
 
 .card-digital .expiration-date {
-    color: #ccc; /* Cambiado */
+    color: #696969; /* Cambiado */
 }
 
-.modal {
-    display: none; /* Agregado */
-    position: fixed; /* Agregado */
-    z-index: 1; /* Agregado */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5); /* Agregado */
-}
 
 .modal-content {
     background-color: #fefefe;
@@ -230,7 +213,7 @@ body::after{
 }
 
 .close {
-    color: #aaa;
+    color: #ff0000;
     float: right;
     font-size: 28px;
     font-weight: bold;
