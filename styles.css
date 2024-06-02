@@ -136,3 +136,109 @@ body::after{
 .dark .card-subtitle {
     color: #a1a1a1;
 }
+
+/*estilos para tajeta modal*/
+/* Estilos del modal */
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed; /* Posición fija para que esté por encima del contenido */
+    z-index: 1; /* Ubicar el modal encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    overflow: auto; /* Permitir desplazamiento si el contenido es demasiado grande */
+    background-color: rgba(0,0,0,0.5); /* Fondo semitransparente */
+  }
+  
+  /* Contenido del modal */
+  .card-digital {
+    border: 1px solid #ccc;
+    background-color: #2C3E50;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Agregado */
+}
+
+.card-digital .bg-img {
+    position: absolute;
+    inset: 0;
+    background-image: url('placeholder.svg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Reducido */
+    border-radius: 8px; /* Agregado */
+}
+
+.card-digital .content-top {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Cambiado */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-digital .university-logo {
+    border-radius: 50%;
+}
+
+.card-digital .content-bottom {
+    padding: 20px;
+}
+
+.card-digital .student-info {
+    display: flex;
+    align-items: center;
+}
+
+.card-digital .student-photo {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.card-digital .student-details {
+    color: #fff; /* Cambiado */
+}
+
+.card-digital .expiration-date {
+    color: #ccc; /* Cambiado */
+}
+
+.modal {
+    display: none; /* Agregado */
+    position: fixed; /* Agregado */
+    z-index: 1; /* Agregado */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); /* Agregado */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 8px;
+    position: relative; /* Agregado */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(212, 207, 207);
+    text-decoration: none;
+    cursor: pointer;
+}
